@@ -1,3 +1,13 @@
 spring:
-  application:
-    name: simple-crud
+    application:
+        name: simple-crud
+
+    datasource:
+        url: jdbc:postgresql://localhost:5432/simple_crud
+        username: jdribleza
+        password: jdribleza
+        driver-class-name: org.postgresql.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
