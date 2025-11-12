@@ -5,6 +5,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.time.LocalDateTime;
 
 public class Guitar {
+
     private String brand;
     private String model;
     private String color;
