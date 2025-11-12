@@ -15,7 +15,7 @@ public class Guitar {
     private String color;
     private int strings;
     private String description;
-    
+
     @ManyToOne
     @JoinColumn(name = "manufacturer_id")
     private Manufacturer manufacturer;

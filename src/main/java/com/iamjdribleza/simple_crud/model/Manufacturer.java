@@ -1,9 +1,6 @@
 package com.iamjdribleza.simple_crud.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,8 +20,13 @@ public class Manufacturer {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "manufacturer_seq")
     private long id;
 
+    @Column(nullable = false)
     private String name;
+
+    @Column(nullable = false)
     private String description;
+
+    @Column(nullable = false)
     private LocalDate dateFounded;
 
     @CreationTimestamp
