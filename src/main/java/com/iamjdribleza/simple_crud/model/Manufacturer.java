@@ -20,7 +20,7 @@ import java.time.LocalDate;
 @Entity(name = "tbl_manufacturer")
 public class Manufacturer {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "manufacturer_sequence")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "manufacturer_seq")
     private long id;
 
     private String name;
