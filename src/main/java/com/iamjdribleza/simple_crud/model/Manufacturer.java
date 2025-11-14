@@ -8,17 +8,26 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
 
-@Entity(name = "tbl_manufacturer")
+@Entity
 public class Manufacturer {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "manufacturer_seq")
+    @SequenceGenerator(
+            name = "manufacturer_seq_gen",
+            sequenceName = "manufacturer_seq",
+            allocationSize = 1
+    )
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "manufacturer_seq_gen")
     private long id;
+
+    @Column(updatable = false, unique = true)
+    private UUID refId;
 
     @Column(nullable = false)
     private String name;
@@ -27,7 +36,7 @@ public class Manufacturer {
     private String description;
 
     @Column(nullable = false)
-    private LocalDate dateFounded;
+    private int yearFounded;
 
     @CreationTimestamp
     private LocalDate dateCreated;
