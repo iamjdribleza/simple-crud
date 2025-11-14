@@ -21,7 +21,7 @@ This project is designed to help beginners understand how CRUD operations work i
 
 ---
 
-## Guitar API Endpoints
+## API Endpoints
 ### Guitar
 **GET /api/v1/guitars**
 List all guitars.
