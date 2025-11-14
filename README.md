@@ -21,6 +21,41 @@ This project is designed to help beginners understand how CRUD operations work i
 
 ---
 
+## Guitar API Endpoints
+### Guitar
+**GET /api/v1/guitars**
+List all guitars.
+
+**GET /api/v1/guitars/{refId}**
+Get guitar by reference id.
+
+**POST /api/v1/guitars**
+Create new guitar.
+
+**PATCH /api/v1/guitars/{refId}**
+Update guitar.
+
+**DELETE /api/v1/guitars/{refId}**
+Delete guitar.
+
+### Manufacturer
+**GET /api/v1/manufacturers**
+List all manufacturers.
+
+**GET /api/v1/manufacturers/{refId}**
+Get manufacturer by reference id.
+
+**POST /api/v1/manufacturers**
+Create new manufacturer.
+
+**PATCH /api/v1/manufacturers/{refId}**
+Update manufacturer.
+
+**DELETE /api/v1/manufacturers/{refId}**
+Delete manufacturer.
+
+---
+
 ## Installation & Setup
 
 ### 1. Clone the repository
