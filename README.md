@@ -54,6 +54,34 @@ Update manufacturer.
 **DELETE /api/v1/manufacturers/{refId}**
 Delete manufacturer.
 
+## Usage
+```bash
+// Sample JSON format for frontend request
+
+// Create Manufacturer
+// POST /api/v1/manufacturers
+{
+    "refId":"",
+    "name":"Yamaha",
+    "description":"A Japanese company founded in 1887, known for musical instruments, and is the world's largest manufacturer of musical instruments.",
+    "yearFounded":1987
+}
+
+// Create Guitar
+// POST /api/v1/guitars
+{
+    "refId":"",
+    "brand":"Yamaha",
+    "model":"F-310",
+    "description":"The Yamaha F-310 acoustic folk guitar represents everything that you have come to expect from the world leader in musical instrument manufacturing.",
+    "colors":["Yellow","Black"],
+    "strings":6,
+    "type":"ACOUSTIC",
+    "manufacturerRefId":"98f82ccb-ab6f-408a-9b4b-cdc90e99df09"
+}
+
+```
+
 ---
 
 ## Installation & Setup
